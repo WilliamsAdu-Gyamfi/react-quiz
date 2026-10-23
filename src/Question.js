@@ -1,5 +1,4 @@
 const Question = function ({ question, dispatch, answer }) {
-  console.log(question);
   return (
     <div className="options">
       <h4>{question.question}</h4>
