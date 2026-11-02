@@ -2,10 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import Hook from "./Hook";
+import { QuizProvider } from "./QuizContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <QuizProvider>
+      {" "}
+      <App />
+    </QuizProvider>
   </React.StrictMode>,
 );
